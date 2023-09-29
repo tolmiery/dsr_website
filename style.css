@@ -1,6 +1,6 @@
 *{
     margin:0;
-    padding: 0;
+    padding: 1;
     font-family: 'TT Commons', sans-serif;
     box-sizing: border-box;
 
@@ -9,6 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #fff;
-    color: rgb(0, 0, 0);
+    background: #ffe8dd;
+    color: rgb(129, 4, 4);
 }
