@@ -70,6 +70,37 @@ nav ul li a:hover::after{
     color:#52A5F7 ;
 }
 
+hr.rounded {
+    border-top: 5px solid #ffb0b0;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/*-------------- button -------------- */
+
+.container .btn {
+    top: 50%;
+    left: 50%;
+    background-color: #00a2e7;
+    color: #ffffff;
+    margin-right: 0px;
+    font-size: 16px;
+    padding: 16px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    transition-duration: 0.5s;
+    border: 1px solid #00a2e7; 
+    box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .container .btn:hover {
+    background-color: #44c7ff;
+    color: #ffffff;
+  }
 /*-------------- about -------------- */
 #about{
     padding: 80px 0;
