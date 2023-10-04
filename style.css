@@ -24,13 +24,22 @@ body{
 .container{
     padding:10px 10%;
 }
-nav{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
+
+.container nav{
+    background-color:#0f79cf; 
+    margin: 0px;
+    padding: 0px;
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    background-size: cover;
+    justify-content: space-between;
+    display:flex;
+}
+.container nav a{
+    color:#ffffff; 
+    text-decoration:none;
+}
 
 nav ul li{
     display: inline-block;
@@ -59,15 +68,19 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 10%;
-    font-size: 40 px;
+    font-size: 10vw;
 }
 .header-text h1{
-    font-size: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 7vw;
+    margin-bottom: 5%;
+    padding:10px 10%;
 }
 .header-text h1 span{
     color:#52A5F7 ;
+}
+
+.sub-title h1{
+    font-size: 4vw;
 }
 
 hr.rounded {
@@ -78,13 +91,11 @@ hr.rounded {
 }
 
 .container .btn {
-    top: 50%;
-    left: 50%;
     background-color: #00a2e7;
     color: #ffffff;
     margin: 2px;
-    font-size: 16px;
-    padding: 16px 3.5vw;
+    font-size: 1vw;
+    padding: 2vh 3.75vw;
     cursor: pointer;
     border-radius: 4px;
     text-align: center;
@@ -95,10 +106,10 @@ hr.rounded {
         inset -1px -1px 2px rgba(0, 0, 0, 0.6);
   }
   
-  .container .btn:hover {
+.container .btn:hover {
     background-color: #44c7ff;
     color: #ffffff;
-  }
+}
 
 /*-------------- about -------------- */
 #about{
@@ -112,6 +123,6 @@ hr.rounded {
 }
 
 .about-col-2{
-    flex-basis: 60%;
-    font-size: 20px;
+    flex-basis: 100%;
+    font-size: 2vw;
 }
