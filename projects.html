@@ -3,45 +3,69 @@
     Infrastructure Survey, Accessible Routes, and Faculty Panel, ... -->
     <head>
         <title> Projects page title </title>
+        <link rel="stylesheet" href = "style.css">
         <style>
             h1 {
                 text-align: center;
-                color: darkblue
-            }
-            h2 {
-                text-indent: 150px;
-                color: black
+                color: navy
             }
             p {
-                text-indent: 200px;
-                color: darkblue
+                /*text-indent: 200px;*/
+                color: navy
             }
-            .image-links {
-                padding-left:200px;;
-            }  
         </style>
     </head>
 
     <body>
-        <h1> DSR Projects </h1>
+        <div id = "header">
+            <div class = "container">
+                <div 
+                class="image"><img src="rpilogo.jpg" alt="logo" height = auto width = 100% style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                </div>
+                <div style="margin-top: -6px;"><nav>
+                    <a href="index.html" > <button class="btn"><strong>About</strong></button></a>
+                    <a href="resources.html"><button class="btn"> <strong>RPI Disability Resources</strong></button></a>
+                    <a href="index.html" > <button class="btn"> <strong>Other Resources</strong></button></a>
+                    <a href="index.html"><button class="btn"> <strong>Calendar</strong></button></a>
+                </nav>
+                <div class="header-text">
+                    <h1> DSR Projects </h1> <!-- Use Header css class here -->
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title"> Infrastructure Survey </h1> 
+                    <p> An ongoing form that allows RPI students to report accessibility complaints </p>
+                    <a style="color:tomato;" target="_blank" href="https://forms.gle/7vPyThC3GG4VAu657">Participate now!</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title"> Accessible Routes </h1> 
+                    <p> Another RCOS project! Working on a map app of all accessibility obstacles on campus </p>
+                    <!-- Maybe logo/image of Accessible Routes project -->
+                    <img src="logo.JPG" alt="Accessible Route" width="60" height="60">
+                </div>
+            </div>
+        </div>
 
-        <h2> Infrastructure Survey </h2>
-        <p> An ongoing form that allows RPI students to report accessibility complaints </p>
-        <span class="image-links">
-            <a style="color:tomato;" target="_blank" href="https://forms.gle/7vPyThC3GG4VAu657">Participate now!</a> 
-            <!-- Figure out css hyperlink-->
-        </span>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title"> Faculty Panel </h1> 
+                    <p> Last year, we put together a presentation for faculty about how to best help students 
+                        with all sorts of learning obstacles learn </p>
+                    <p> ... This year, ... </p> <!-- More information for Faculty Panel section -->
+                </div>
+            </div>
+        </div>
 
-        <h2> Accessible Routes </h2>
-        <p> Another RCOS project! Working on a map app of all accessibility obstacles on campus </p>
-        <!-- Maybe logo/image of Accessible Routes project -->
-        <span class="image-links"> 
-            <img src="logo.JPG" alt="Accessible Route" width="60" height="60"> 
-        </span>
-
-        <h2> Faculty Panel </h2>
-        <p> Last year, we put together a presentation for faculty about how to best help students 
-            with all sorts of learning obstacles learn </p>
-        <p> ... </p> <!-- More information for Faculty Panel section -->
     </body>
 </html>
