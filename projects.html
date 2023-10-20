@@ -5,13 +5,13 @@
         <title> Projects page title </title>
         <link rel="stylesheet" href = "style.css">
         <style>
-            h1 {
-                text-align: center;
-                color: navy
-            }
-            p {
-                /*text-indent: 200px;*/
-                color: navy
+            .project-card{
+                /*background-color: aquamarine;*/
+                border: 1px solid #ccc;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
             }
         </style>
     </head>
@@ -22,47 +22,57 @@
                 <div 
                 class="image"><img src="rpilogo.jpg" alt="logo" height = auto width = 100% style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
                 </div>
-                <div style="margin-top: -6px;"><nav>
-                    <a href="index.html" > <button class="btn"><strong>About</strong></button></a>
-                    <a href="resources.html"><button class="btn"> <strong>RPI Disability Resources</strong></button></a>
-                    <a href="index.html" > <button class="btn"> <strong>Other Resources</strong></button></a>
-                    <a href="index.html"><button class="btn"> <strong>Calendar</strong></button></a>
-                </nav>
-                <div class="header-text">
-                    <h1> DSR Projects </h1> <!-- Use Header css class here -->
+                <div style="margin-top: -6px;">
+                    <nav>
+                        <a href="index.html" > <button class="btn"><strong>About</strong></button></a>
+                        <a href="resources.html"><button class="btn"> <strong>RPI Disability Resources</strong></button></a>
+                        <a href="index.html" > <button class="btn"> <strong>Other Resources</strong></button></a>
+                        <a href="calendar.html"><button class="btn"> <strong>Calendar</strong></button></a>
+                    </nav>
+                    <div class="header-text">
+                        <h1> <center> DSR Projects </center> </h1> <!-- Use Header css class here -->
+                    </div>
                 </div>
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <div class="project-card">
+                <div class="row">
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> Infrastructure Survey </h1> 
+                        <p> An ongoing form that allows RPI students to report accessibility complaints </p>
+                        <a style="color:tomato;" target="_blank" href="https://forms.gle/7vPyThC3GG4VAu657">Participate now!</a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="container">
-            <div class="row">
-                <div class="about-col-2">
-                    <h1 class="sub-title"> Infrastructure Survey </h1> 
-                    <p> An ongoing form that allows RPI students to report accessibility complaints </p>
-                    <a style="color:tomato;" target="_blank" href="https://forms.gle/7vPyThC3GG4VAu657">Participate now!</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container">
-            <div class="row">
-                <div class="about-col-2">
-                    <h1 class="sub-title"> Accessible Routes </h1> 
-                    <p> Another RCOS project! Working on a map app of all accessibility obstacles on campus </p>
-                    <!-- Maybe logo/image of Accessible Routes project -->
-                    <img src="logo.JPG" alt="Accessible Route" width="60" height="60">
+            <div class="project-card">
+                <div class="row">
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> Accessible Routes </h1> 
+                        <p> Another RCOS project! Working on a map app of all accessibility obstacles on campus </p>
+                        <!-- Maybe logo/image of Accessible Routes project -->
+                        <img src="logo.JPG" alt="Accessible Route" width="60" height="60">
+                        <a href = "#"> Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row">
-                <div class="about-col-2">
-                    <h1 class="sub-title"> Faculty Panel </h1> 
-                    <p> Last year, we put together a presentation for faculty about how to best help students 
-                        with all sorts of learning obstacles learn </p>
-                    <p> ... This year, ... </p> <!-- More information for Faculty Panel section -->
+            <div class="project-card">
+                <div class="row">
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> Faculty Panel </h1> 
+                        <p> Last year, we put together a presentation for faculty about how to best help students 
+                            with all sorts of learning obstacles learn </p>
+                        <p> ... This year, ... </p> <!-- More information for Faculty Panel section -->
+                        <a href = "#"> Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
