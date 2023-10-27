@@ -133,3 +133,13 @@ hr.rounded {
     flex-basis: 100%;
     font-size: 2vw;
 }
+
+/*-------------- Projects -------------- */
+.project-card{ /*Seperate CSS file later*/
+    /*background-color: aquamarine;*/
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
