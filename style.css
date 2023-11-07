@@ -101,9 +101,9 @@ hr.rounded {
 .container .btn {
     background-color: #00a2e7;
     color: #ffffff;
-    margin: 2px;
-    font-size: 1.55vw;
-    padding: 2vh 2vw;
+    margin: 1.9px;
+    font-size: 1.45vw;
+    padding: 2vh 1.8vw;
     cursor: pointer;
     border-radius: 4px;
     text-align: center;
