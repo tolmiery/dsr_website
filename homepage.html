@@ -10,9 +10,8 @@
 </head>
 <body>
 
-    <!-------------- dark/light mode toggle -------------->
-    <!-- https://venngage.com/tools/accessible-color-palette
-        -generator -->
+    <!-- Switching background color toggle -->
+    <!-- https://venngage.com/tools/accessible-color-palette-generator -->
     <label for="colorSelector">Select a Background Color:</label>
     <select id="colorSelector">
         <option value="#ffeaea">Light Pink (Original)</option>
@@ -45,15 +44,23 @@
         <option value="#d9e4ff">Pastel Grey Blue (Black Text)</option>
         <option value="#f8b8d0">Pastel Light Pink (Black Text)</option>
         <option value="#f194b8">PastelPink (Black Text)</option>
-
     </select>
-
     <script>
         const colorSelector = document.getElementById('colorSelector');
         const body = document.body;
-
         colorSelector.addEventListener('change', () => { body.style.backgroundColor = colorSelector.value; });
     </script>
+
+
+    <!-- Text color switching toggle -->
+    <label for="colorSelector">Select a Text Color:</label>
+    <select id="colorSelector" onchange="changeTextColor()">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+    </select>
+    <script src="functions.js"></script>
 
 
     <!-------------- dark/light mode toggle -------------->
