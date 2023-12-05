@@ -55,24 +55,20 @@
 
 
     <!-- Text color switching toggle -->
-    <button onclick="changeTextColor()">Change Text Color</button>
-    <script>
-        function changeTextColor() {
-            // Get the body element
-            var bodyElement = document.body;
-
-            // Change the text color
-            bodyElement.style.color = "#ff0000"; // Replace with your desired color code
-        }
-    </script>
-    <!-- <label for="colorSelector">Select a Text Color:</label>
-    <select id="colorSelector" onchange="changeTextColor()">
+    <label for="TextColorSelector">Select a Text Color:</label>
+    <select onchange="changeTextColor(this)">
+    <option value="">Select Color</option>
         <option value="red">Red</option>
         <option value="blue">Blue</option>
         <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
     </select>
-    <script src="functions.js"></script> -->
+    <script>
+    function changeTextColor(selectObject) {
+        var color = selectObject.value;
+        document.body.style.color = color;
+    }
+    </script>
 
 
     <!-------------- dark/light mode toggle -------------->
