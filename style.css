@@ -130,7 +130,7 @@ hr.rounded {
 /*-------------- about -------------- */
 #about{
     padding: 80px 0;
-    color: #080808;
+    /*color: #080808;*/
 }
 .row {
     display:flex;
@@ -141,5 +141,5 @@ hr.rounded {
 .about-col-2{
     flex-basis: 100%;
     font-size: 2vw;
-    color: rgb(39, 0, 0);
+    /*color: rgb(39, 0, 0);*/
 }
