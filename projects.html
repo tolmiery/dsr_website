@@ -16,6 +16,78 @@
     </head>
 
     <body>
+
+        <!-- Switching background color toggle -->
+    <!-- https://venngage.com/tools/accessible-color-palette-generator -->
+    <label for="colorSelector">Select a Background Color:</label>
+    <select id="colorSelector">
+        <option value="#ffeaea">Light Pink (Original)</option>
+        <option value="#FFFFFF">White</option>
+        <option value="#000000">Black</option>
+        <option value="#F0F0F0">Light Grey</option>
+        <!-- Vibrant Color Palette -->
+        <option value="#00bf7d">Vibrant Green (Black Text)</option>
+        <option value="#00b4c5">Vibrant Aquamarine (Black Text)</option>
+        <option value="#0073e6">Vibrant Blue (White Text)</option>
+        <option value="#2546f0">Vibrant Royale Blue (White Text)</option>
+        <option value="#5928ed">Vibrant Purple (White Text)</option>
+        <!-- Monochromatic Color Palette -->
+        <option value="#b3c7f7">Monochromatic Lavender (Black Text)</option>
+        <option value="#8babf1">Monochromatic Dark Lavender (Black Text)</option>
+        <option value="#0073e6">Monochromatic Blue (White Text)</option>
+        <option value="#0461cf">Monochromatic Royale Blue (White Text)</option>
+        <option value="#054fb9">Monochromatic Dark Blue (White Text)</option>
+        <!-- Contrasting Color Palette -->
+        <option value="#c44601">Contrasting Dark Orange (White Text)</option>
+        <option value="#8babf1">Contrasting Orange (Black Text)</option>
+        <option value="#5ba300">Contrasting Green (Black Text)</option>
+        <option value="#89ce00">Contrasting Light Green (Black Text)</option>
+        <option value="#e6308a">Contrasting Pink (Black Text)</option>
+        <option value="#b51963">Contrasting Dark Pink (White Text)</option>
+        <!-- Pastel Color Palette -->
+        <option value="#faaf90">Pastel Peach (Black Text)</option>
+        <option value="#b9e192">Pastel Green (Black Text)</option>
+        <option value="#cfebb6">Pastel Light Green (Black Text)</option>
+        <option value="#d9e4ff">Pastel Grey Blue (Black Text)</option>
+        <option value="#f8b8d0">Pastel Light Pink (Black Text)</option>
+        <option value="#f194b8">PastelPink (Black Text)</option>
+    </select>
+    <script>
+        const colorSelector = document.getElementById('colorSelector');
+        const body = document.body;
+        colorSelector.addEventListener('change', () => { body.style.backgroundColor = colorSelector.value; });
+    </script>
+
+
+    <!-- Text color switching toggle -->
+    <label for="TextColorSelector">Select a Text Color:</label>
+    <select onchange="changeTextColor(this)">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="grey">Grey</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <script>
+    function changeTextColor(selectObject) {
+        var color = selectObject.value;
+        document.body.style.color = color;
+    }
+    </script>
+
+
+    <!-------------- dark/light mode toggle -------------->
+    <button onclick="myFunction()">Dark mode</button>
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+
+
+        
         <div id = "header">
             <div class="container">
             <div class="image"><img src="rpilogo.jpg" alt="logo" style="border-top-left-radius: 5px; border-top-right-radius: 5px;"></div>
